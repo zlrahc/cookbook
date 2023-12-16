@@ -1,0 +1,71 @@
+html                {scroll-behavior: smooth;}
+::-webkit-scrollbar {width: 0 !important; height: 0 !important;}
+
+.title              {padding-block: 35vh; text-align: center; transition: padding-block 0.5s;}
+.title a, .title p  {color: rgb(93, 131, 131); margin: 0;}
+
+.title--title {
+    font-size: 10rem;
+    position: relative;
+}
+
+.title--suptitle{
+    font-size: 2rem;
+    position: relative;
+
+    transition: font-size 0.5s;
+
+}
+
+.title--title       {transition: transform 0.75s ease;}
+.title--title:hover {transform: scale(1.08);}
+
+.featured-container{
+    margin: 1rem;
+    position: relative;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+    'f1 f2'
+    'f1 f3';
+}
+
+.featured {
+    padding-block: 24vh;
+    background-position: center;
+    background-size: cover;
+
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.featured:hover{
+    transform: scale(1.001);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+    z-index: 1;
+}
+
+.f1 {grid-area: f1;} 
+.f2 {grid-area: f2;}
+.f3 {grid-area: f3;}
+
+.f1 {animation: f1-image 10s infinite;}
+.f2 {animation: f2-image 5s infinite;}
+.f3 {animation: f3-image 15s infinite;}
+
+@keyframes f1-image {
+    0%, 31.33%, 100%{background-image: url("../image/category-beverage.png");}
+    33.33%, 64.66%  {background-image: url("../image/category-chicken.png");}
+    66.66%, 98%     {background-image: url("../image/category-pasta.png");}
+}
+
+@keyframes f2-image {
+    0%, 32.33%, 100%{background-image: url("../image/category-pork.png");}
+    33.33%, 65.66%  {background-image: url("../image/category-vegies.png");}
+    66.66%, 99%     {background-image: url("../image/category-dessert.png");}
+}
+
+@keyframes f3-image {
+    0%, 32.33%, 100%{background-image: url("../image/category-pasta.png");}
+    33.33%, 65.66%  {background-image: url("../image/category-dessert.png");}
+    66.66%, 99%     {background-image: url("../image/category-pork.png");}
+}

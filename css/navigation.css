@@ -1,0 +1,53 @@
+/*Navigation Tab Format*/
+.header-nav {width: 100%;z-index: 100;}
+
+.header-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header-nav li {
+    text-align: center;
+    background-color: rgba(255, 254, 226, 0.151);
+    flex: 1;
+}
+
+.header-nav a {
+    display: block;
+    padding-block: 1.5rem;
+    color: rgb(116, 107, 97);
+    font-size: 1vw;
+}
+
+/*Animations*/
+.header-nav li {
+    transition: 
+    background-color 0.2s ease-out,
+    box-shadow 0.5s ease;
+}
+
+.header-nav a {
+    transition: 
+    color 0.5s ease-out;
+}
+
+.header-nav li:hover {
+    background-color: rgb(93, 131, 131);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.header-nav li:hover a {
+    color: rgb(255, 244, 230);
+}
+
+/*Current Page Highlight*/
+.current {
+    background-color: rgb(93, 131, 131) !important;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.current a {color: rgb(255, 244, 230) !important;}
+

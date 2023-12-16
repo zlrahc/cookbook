@@ -1,0 +1,84 @@
+/*Responsive*/
+@media (min-width: 1081px) {
+
+    .title p {top: -5rem;}
+    
+}
+
+@media (max-width: 1080px) {
+
+    /*indexStyle.css*/
+    #HomeBody .title {padding-block: 15%;}
+
+    body .title--title {font-size: 15vw;}    
+
+    #HomeBody .featured-container {grid-template-areas:'f1''f2''f3';}
+
+    /*recipeStyle.css*/
+    #RecipeBody .category-container {
+        margin-inline: 10vh;
+    }
+
+    #RecipeBody .category {
+        flex: 0 1 100%;
+    }
+
+    .procedure-container {
+        margin-inline: 5%;
+        margin-bottom: 10%;
+    }  
+
+    .content, .content table {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    
+    /*navigation.css*/
+    .header-nav li a {
+        font-size: 1.5rem;
+        padding-block: 30%;
+    }
+
+    /*indexStyle.css*/
+    #HomeBody .featured {padding-block: 30%;}
+
+    /*recipeStyle.css*/
+    #RecipeBody .category-container {
+        margin-inline: 5vh;
+    }
+
+    #RecipeBody .category {
+        font-size: 15vw;
+    }
+
+    #RecipeBody .category {
+        padding-block: 5rem;
+    }
+
+    .recipe {
+        flex: 0 0 100%;
+        margin: 0;
+    }
+
+    .footer {
+        margin-top: 7vh;
+        height: 30vh;
+        background-color: rgb(93, 131, 131);
+    
+    }
+
+    .procedure-container {
+        display: block;
+        margin-bottom: 10%;
+    }  
+
+    .content, .content table {
+        font-size: 1rem;
+    }
+    
+
+
+}

@@ -1,0 +1,37 @@
+.content {width: 100%;}
+
+.title {
+    text-shadow: 5rem 5rem 1rem #00000079;
+    font-size: 10rem;
+    color: #5d8383;
+    text-align: right;
+    margin: 10%;
+}
+
+.developer--container {
+    margin: 10%;
+    display: flex;
+    gap: 3rem;
+}
+
+.developer {
+    flex: 0 0 50%;
+    
+}
+
+.developer img {
+    width: 30vw;
+    height: auto;
+
+    transition: transform 0.5s ease, box-shadow 0.5s ease;    
+}
+
+.developer p {
+    font-size: 5rem;
+    color:#5d8383;
+}
+
+.developer img:hover {
+    transform: scale(1.2);
+    box-shadow: 5rem 5rem 1rem #00000079;
+}

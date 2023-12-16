@@ -1,0 +1,248 @@
+#Vegies .title, #Pork .title, #Chicken .title, #Pasta .title{
+    background-color: #80808093;;
+    background-blend-mode:exclusion;
+    color: #fff4e6;
+    margin-bottom: 10%;
+}
+
+.title {
+    font-size: 10rem;
+    color: rgb(93, 131, 131);
+    text-align: left;
+    padding-inline: 10%;
+    padding-block: 1rem;
+
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.page .title {font-size: 5rem;}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-block: 1rem;
+    margin-inline: 10vw;
+    gap: 1rem;
+
+}
+
+.category {
+    padding-block: 10rem;
+    flex: 1 0 30%;    
+
+    text-align: center;
+    font-size: 5vw;
+    color: #fff4e6;
+    text-shadow: 0px 0px 10px #5d8383;
+    
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.category {
+    transition:
+    background-color 0.5s ease,
+    transform 0.5s ease,
+    shaodow-box 0.5s ease;
+}
+
+.category:hover {
+    transform: scale(1.01);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    background-color: rgb(93, 131, 131);
+    background-blend-mode: overlay;
+
+}
+
+.vegies  {background-image: url("../image/category-vegies.png");    }
+.pork    {background-image: url("../image/category-pork.png");      } 
+.chicken {background-image: url("../image/category-chicken.png");   }
+.pasta   {background-image: url("../image/category-pasta.png");     }
+.beverage{background-image: url("../image/category-beverage.png");  }
+.dessert {background-image: url("../image/category-dessert.png");   }
+
+
+/*------------------------------------------------------------------*/
+
+.recipe-container {
+    margin-inline: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+.recipe {
+    margin:1rem;
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe .image {
+    background-color: #5d8383;
+    background-size: cover;
+    transition:
+    transform 0.5s ease,
+    shaodow-box 0.5s ease;
+    padding: 8rem;
+    
+}
+
+.recipe .text {
+    font-weight: bolder;
+    font-size: 3vh;
+    margin-block: 2rem;
+    color: #5d8383;
+}
+
+.recipe .text:hover {
+    text-decoration: underline;
+}
+
+.recipe .image:hover {
+    transform: scale(1.01);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+/**/
+#Vegies  .title {background-image: url("../image/category-vegies.png");}
+#Pork    .title {background-image: url("../image/category-pork.png");}
+#Chicken .title {background-image: url("../image/category-chicken.png");}
+#Pasta   .title {background-image: url("../image/category-pasta.png");}
+
+/*pork*/
+#Pork .recipe:nth-child(1) .image{
+    background-image: url("../image/pork/01.png");
+}
+#Pork .recipe:nth-child(2) .image{
+    background-image: url("../image/pork/02.png");
+}
+#Pork .recipe:nth-child(3) .image{
+    background-image: url("../image/pork/03.png");
+}
+#Pork .recipe:nth-child(4) .image{
+    background-image: url("../image/pork/04.png");
+}
+#Pork .recipe:nth-child(5) .image{
+    background-image: url("../image/pork/05.png");
+}
+/*vegetable*/
+#Vegies .recipe:nth-child(1) .image{
+    background-image: url("../image/vegies/01.png");
+}
+#Vegies .recipe:nth-child(2) .image{
+    background-image: url("../image/vegies/02.png");
+}
+#Vegies .recipe:nth-child(3) .image{
+    background-image: url("../image/vegies/03.png");
+}
+#Vegies .recipe:nth-child(4) .image{
+    background-image: url("../image/vegies/04.png");
+}
+#Vegies .recipe:nth-child(5) .image{
+    background-image: url("../image/vegies/05.png");
+}
+/*chicken*/
+#Chicken .recipe:nth-child(1) .image{
+    background-image: url("../image/chicken/01.png");
+}
+#Chicken .recipe:nth-child(2) .image{
+    background-image: url("../image/chicken/02.png");
+}
+#Chicken .recipe:nth-child(3) .image{
+    background-image: url("../image/chicken/03.png");
+}
+#Chicken .recipe:nth-child(4) .image{
+    background-image: url("../image/chicken/04.png");
+}
+#Chicken .recipe:nth-child(5) .image{
+    background-image: url("../image/chicken/05.png");
+}
+/*pasta*/
+#Pasta .recipe:nth-child(1) .image{
+    background-image: url("../image/pasta/01.png");
+}
+#Pasta .recipe:nth-child(2) .image{
+    background-image: url("../image/pasta/02.png");
+}
+#Pasta .recipe:nth-child(3) .image{
+    background-image: url("../image/pasta/03.png");
+}
+#Pasta .recipe:nth-child(4) .image{
+    background-image: url("../image/pasta/04.png");
+}
+#Pasta .recipe:nth-child(5) .image{
+    background-image: url("../image/pasta/05.png");
+}
+/*beverage*/
+#Beverage .recipe:nth-child(1) .image{
+    background-image: url("");
+}
+#Beverage .recipe:nth-child(2) .image{
+    background-image: url("");
+}
+#Beverage .recipe:nth-child(3) .image{
+    background-image: url("");
+}
+#Beverage .recipe:nth-child(4) .image{
+    background-image: url("");
+}
+#Beverage .recipe:nth-child(5) .image{
+    background-image: url("");
+}
+/*desert*/
+#Dessert .recipe:nth-child(1) .image{
+    background-image: url("");
+}
+#Dessert .recipe:nth-child(2) .image{
+    background-image: url("");
+}
+#Dessert .recipe:nth-child(3) .image{
+    background-image: url("");
+}
+#Dessert .recipe:nth-child(4) .image{
+    background-image: url("");
+}
+#Dessert .recipe:nth-child(5) .image{
+    background-image: url("");
+}
+
+/*------------------------------------------------------------------*/
+.procedure-container {
+    display: flex;
+    margin-inline: 10%;
+    margin-bottom: 10%;
+}
+
+.content {
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.procedure-container {
+    display: flex;
+}
+
+.ing {
+    flex: 0 0 35%;
+}
+
+.pro {
+    flex: 0 0 65%;
+}
+
+.content li {
+    margin-bottom: 1rem;
+}
+
+.content table {
+    font-size: 1.25rem;
+}
+
+.content td {
+    padding-block: 0.5rem;
+}
